@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;Com.Artek&apos; to &apos;Type1&apos;&#x0A;- Original project: &apos;Factory_Mathod&apos;&#x0A;- Original element: &apos;Factory_Mathod/src/Com.Artek&apos;&#x0A;- Renamed element: &apos;Factory_Mathod/src/Type1&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;Com.Artek&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;Com.Artek" name="Type1" qualified="false" references="true" stamp="1499850646029" textual="false" version="1.0"/>
+</session>

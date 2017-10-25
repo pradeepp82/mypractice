@@ -1,0 +1,6 @@
+package Com;
+
+public class SingleTonScope {
+
+	private String msg;
+}

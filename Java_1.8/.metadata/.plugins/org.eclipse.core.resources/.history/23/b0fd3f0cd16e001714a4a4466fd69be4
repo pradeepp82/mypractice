@@ -1,0 +1,19 @@
+package Com.Artek;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class Unit1 {
+
+	public static void main(String[] args) {
+		
+		List<Person> people = Arrays.asList(new Person("pp", "rp", 23),
+				new Person("ad", "dj", 21),
+				new Person("fjn", "jfj", 23)
+				
+				);
+				
+		
+		
+	}
+}

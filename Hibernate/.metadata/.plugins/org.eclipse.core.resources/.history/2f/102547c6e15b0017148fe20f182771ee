@@ -1,0 +1,39 @@
+package Com.Artek;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
+@Entity
+public class Address {
+
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private Integer addressid;
+	
+	private String place;
+	@OneToMany(targetEntity=Student.class,cascade=CascadeType.ALL)
+	private String parent;
+	public Integer getAddressid() {
+		return addressid;
+	}
+	public void setAddressid(Integer addressid) {
+		this.addressid = addressid;
+	}
+	public String getPlace() {
+		return place;
+	}
+	public void setPlace(String place) {
+		this.place = place;
+	}
+	public String getParent() {
+		return parent;
+	}
+	public void setParent(String parent) {
+		this.parent = parent;
+	}
+	
+}

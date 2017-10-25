@@ -1,0 +1,24 @@
+package Functional_interface;
+
+    interface doable{  
+        default void doIt(){  
+            System.out.println("Do it now");  
+        }  
+    }  
+      
+    @FunctionalInterface  
+    interface sayable extends doable{  
+        void say(String msg);   // abstract method  
+    }  
+      
+    public class Functional_Extends implements sayable{  
+      
+        public void say(String msg){  
+            System.out.println(msg);  
+        }  
+        public static void main(String[] args) {  
+            Functional_Extends fie = new Functional_Extends();  
+            fie.say("Hello there");  
+            fie.doIt();  
+        }  
+    }  

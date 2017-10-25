@@ -1,0 +1,8 @@
+package Com.Artek;
+
+public class Product {
+
+	private Integer productid;
+	private String productname;
+	private Integer price;
+}

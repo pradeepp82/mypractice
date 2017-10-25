@@ -1,0 +1,14 @@
+package Com.Artek;
+
+public class Greeter {
+   public void greek(){
+	   
+	   System.out.println("hello world");
+   }
+	public static void main(String[] args) {
+		 Greeter g = new Greeter();
+		 g.greek();
+
+	}
+
+}

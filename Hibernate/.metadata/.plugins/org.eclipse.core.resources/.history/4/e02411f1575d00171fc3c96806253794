@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"Xmlfiles/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping>
+<class name="Com.Artek.Student" table="vendor">
+ 
+<id name="vendorid" column="vendid" >
+ <generator class="native"></generator>
+</id>
+<property name="vendorname" column="vendname" />
+ 
+<set name="children" cascade="all" inverse="true">
+ 
+<key column="forevenid"  />
+<one-to-many class="Com.Artek.Customer" />
+ 
+</set>
+ 
+</class>
+</hibernate-mapping>

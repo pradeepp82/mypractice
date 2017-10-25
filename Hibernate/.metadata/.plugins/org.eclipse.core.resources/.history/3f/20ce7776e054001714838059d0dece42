@@ -1,0 +1,9 @@
+package Com.Artek;
+
+public class Employee {
+  private Integer Employeeid;
+  private String EmployeeName;
+  private  Integer CompanyEId;
+ 
+ 
+}

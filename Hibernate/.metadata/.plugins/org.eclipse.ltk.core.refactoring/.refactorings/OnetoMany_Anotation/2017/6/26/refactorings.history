@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Com.Artek.FetchCustomer&apos; to &apos;Fetch_update&apos;&#x0A;- Original project: &apos;OnetoMany_Anotation&apos;&#x0A;- Original element: &apos;Com.Artek.FetchCustomer&apos;&#x0A;- Renamed element: &apos;Com.Artek.Fetch_update&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;FetchCustomer&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Com.Artek{FetchCustomer.java[FetchCustomer" matchStrategy="1" name="Fetch_update" qualified="false" references="true" similarDeclarations="false" stamp="1498628035415" textual="false" version="1.0"/>
+</session>

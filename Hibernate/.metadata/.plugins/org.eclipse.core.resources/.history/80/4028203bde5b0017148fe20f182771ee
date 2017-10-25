@@ -1,0 +1,17 @@
+package Com.Artek;
+
+import java.util.Set;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table
+public class Item {
+
+	@Id
+	private Integer itemid;
+	private String itemName;
+	private Set categories;
+}

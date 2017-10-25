@@ -1,0 +1,10 @@
+package BasicClass;
+
+public class MyTest {
+
+	
+	public int(int a,int b){
+		
+		return a+b;
+	}
+}

@@ -1,0 +1,15 @@
+127.0.0.1 - - [14/Aug/2017:12:02:07 +0530] "GET / HTTP/1.1" 404 994
+127.0.0.1 - - [14/Aug/2017:12:02:11 +0530] "GET /StudentManagement2/ HTTP/1.1" 200 2359
+127.0.0.1 - - [14/Aug/2017:12:02:12 +0530] "GET /StudentManagement2/image/73_big.jpg HTTP/1.1" 200 43683
+127.0.0.1 - - [14/Aug/2017:12:02:12 +0530] "GET /favicon.ico HTTP/1.1" 404 1016
+127.0.0.1 - - [14/Aug/2017:12:02:13 +0530] "GET /favicon.ico HTTP/1.1" 404 1016
+127.0.0.1 - - [14/Aug/2017:12:02:14 +0530] "GET /StudentManagement2/Adminlogin.html HTTP/1.1" 200 2759
+127.0.0.1 - - [14/Aug/2017:12:02:14 +0530] "GET /StudentManagement2/image/12510319-Business-people-working-together-in-office-Stock-Photo.jpg HTTP/1.1" 200 135809
+127.0.0.1 - - [14/Aug/2017:12:02:16 +0530] "POST /StudentManagement2/Admin HTTP/1.1" 302 -
+127.0.0.1 - - [14/Aug/2017:12:02:16 +0530] "GET /StudentManagement2/AdminTask.html HTTP/1.1" 200 2894
+127.0.0.1 - - [14/Aug/2017:12:02:16 +0530] "GET /StudentManagement2/image/admin.jpg HTTP/1.1" 200 200661
+127.0.0.1 - - [14/Aug/2017:12:02:19 +0530] "GET /StudentManagement2/StudentUpdate.jsp HTTP/1.1" 200 2713
+127.0.0.1 - - [14/Aug/2017:12:02:26 +0530] "POST /StudentManagement2/StudentUpdate.jsp HTTP/1.1" 200 2773
+127.0.0.1 - - [14/Aug/2017:12:02:31 +0530] "POST /StudentManagement2/StudentUpdate.jsp HTTP/1.1" 302 -
+127.0.0.1 - - [14/Aug/2017:12:02:32 +0530] "GET /StudentManagement2/Update.jsp HTTP/1.1" 200 3132
+127.0.0.1 - - [14/Aug/2017:12:02:37 +0530] "POST /StudentManagement2/Update.jsp HTTP/1.1" 200 3139

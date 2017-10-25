@@ -1,0 +1,8 @@
+package Com.Artek;
+import java.util.Set;
+public class Company {
+   private int Companyid;
+   private String CompanyName;
+   private Set children;
+ 
+}

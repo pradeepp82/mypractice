@@ -1,0 +1,31 @@
+package Com.Artek;
+
+import java.util.HashSet;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.AnnotationConfiguration;
+import org.hibernate.classic.Session;
+
+public class Insert {
+
+	public static void main(String[] args) {
+		AnnotationConfiguration acfg = new AnnotationConfiguration();
+		acfg.configure();
+		SessionFactory sf = acfg.buildSessionFactory();
+		Session session = sf.openSession();
+		Transaction tx = session.beginTransaction();
+		
+		Company c = new Company();
+		c.setCustomername("infosys");
+		
+		Event e1 = new Event();
+		e1.setEventName("lol");
+		
+		Event e2 = new Event();
+		e2.setEventName("pop");
+		
+		
+		Set s = new HashSet();
+	}
+}

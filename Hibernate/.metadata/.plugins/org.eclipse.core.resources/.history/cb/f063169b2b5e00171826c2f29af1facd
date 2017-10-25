@@ -1,0 +1,8 @@
+package Com.Artek;
+
+public class Location {
+
+	private  Integer locationid;
+	private String locationName;
+	
+}

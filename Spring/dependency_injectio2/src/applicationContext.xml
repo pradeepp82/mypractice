@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+  
+  
+  <bean id="employee" class="Test_Setter.Employee">
+  <property name="id" value="15"></property>
+  <property name="name" value="pradeep"></property>
+  <property name="city" value="banglore"></property>
+  </bean>
+  
+  <bean id="address" class="Si_dependent.Address">
+  <property name="addressl" value="51,bhawarkuan"></property>
+  <property name="city" value="indore"></property>
+  <property name="state" value="madhyapradesh"></property>
+  <property name="country" value="india"></property>
+  </bean>
+  
+  <bean id="emp1" class="Si_dependent.Employee1">
+  <property name ="id" value="1"></property>
+  <property name ="name" value="pradeep panwar"></property>
+  <property name ="address" ref="address"></property>
+  
+  
+  </bean >
+  
+  <bean id="question" class="Si_Collection.Question">
+  <property name="id" value="1"></property>
+   <property name="name" value="pp"></property>
+    <property name="answers" >
+    <list>
+    <value>1</value>
+   <value>2</value>
+    <value>3</value>
+    </list>
+    </property>
+  </bean>
+  
+  <bean id="ans1" class="Si_Collection2.Answer">
+  <property name="id" value="1"></property>
+  <property name="name" value="ravindra nath tagoure is a great poet"></property>
+  <property name="by" value="narendra modi"></property>
+  </bean>
+  
+   <bean id="ans2" class="Si_Collection2.Answer">
+  <property name="id" value="2"></property>
+  <property name="name" value="shivaji rao"></property>
+  <property name="by" value="amit shah"></property>
+  </bean>
+   
+   <bean id="ques1" class="Si_Collection2.Question1">
+  <property name="id" value="1"></property>
+  <property name="name" value="tukaram"></property>
+  <property name="answer" >
+  <list>
+  <ref bean ="ans1"></ref>
+  <ref bean ="ans2"></ref>
+  </list>
+  
+  </property>
+   </bean>
+   
+   <bean id="ques2" class="Si_Map.Question2">
+   <property name="id" value="1"></property>
+  <property name="name" value="who is rajaram kahar"></property>
+  <property name="answer">
+  <map>
+  <entry key="tukarm dagdiya" value="skaram kahar"></entry>
+  <entry key="hukumchand" value="gangaram kahar"></entry>
+  </map>
+  
+  
+  </property>
+   </bean> 
+   
+   <bean id="ans3" class="Si_Map2.Answer3">
+   <property name="id" value="1"></property>
+   <property name="answer" value="aasharam kahar"></property>
+   <property name="postedDate" value="12/1/2014"></property> 
+   </bean> 
+   
+   <bean id="user3" class="Si_Map2.User3"> 
+   <property name="id" value="1"></property>
+   <property name="name" value="bhikaji nahal "></property>
+   <property name="email" value="teja bhai"></property>
+   </bean>
+   
+   <bean id="ques3" class="Si_Map2.Question3">
+   <property name="id" value="1"></property>
+   <property name="name" value="who is crime master gogo"></property>
+   <property name="ans" >
+   <map>
+   <entry key-ref="ans3" value-ref="user3"></entry>
+   
+   </map>
+   </property> 
+   </bean>
+</beans>  

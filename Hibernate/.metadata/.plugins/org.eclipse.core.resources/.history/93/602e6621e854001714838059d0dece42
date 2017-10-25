@@ -1,0 +1,59 @@
+package Com.Artek;
+ 
+import java.util.HashSet;
+import java.util.Set;
+ 
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+ 
+public class CompanyUpdate {
+ 
+public static void main(String args[])
+{
+ 
+Configuration cfg = new Configuration();
+cfg.configure("hibernate.cfg.xml");
+ 
+SessionFactory factory = cfg.buildSessionFactory();
+Session session = factory.openSession();
+//parent object
+     Company v =new Company();
+ 
+       v.setCompanyid(1);
+      v.setCompanyName("yash");
+ 
+    //creating 3 child objects
+     Employee e1 = new Employee();
+ 
+     e1.setCompanyEId(1);
+     e1.setEmployeeName("rajnandan");
+ 
+     Employee c2=new Employee();
+ 
+     c2.setCompanyEId(2);
+     c2.setEmployeeName("sitaram");
+ 
+   
+ 
+    
+    // adding child objects to set, as we taken 3rd property set in parent
+      Set s=new HashSet();
+ 
+     s.add(e1);
+     s.add(c2);
+    
+ 
+     v.setChildren(s);
+ 
+    Transaction tx = session.beginTransaction();
+ 
+     session.update(v);
+ 
+     tx.commit();
+      session.close(); 
+      factory.close();
+ 
+}
+}

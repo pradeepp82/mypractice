@@ -1,0 +1,90 @@
+package Com.Artek;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.classic.Session;
+
+public class Insert_company {
+
+	public static void main(String[] args) {
+		Configuration cfg = new Configuration();
+		cfg.configure();
+		SessionFactory sf = cfg.buildSessionFactory();
+		Session session = sf.openSession();
+		Transaction tx = session.beginTransaction();
+		
+		Company c = new Company();
+		c.setCompanyName("tcs");
+		
+		
+		Manager m1 = new Manager();
+		m1.setManagerName("Ajay jirati");
+		
+	    Manager m2 = new Manager();
+		m2.setManagerName("Arun rathore");
+		
+		Event e1 = new Event();
+  		e1.setEventName("dancing");
+	    e1.setM(m1);
+	    
+	    
+		Event e2 = new Event();
+		e2.setEventName("singing");
+        e2.setM(m2);
+		
+		
+		Set s = new HashSet();
+		s.add(e1);
+	    s.add(e2);
+	    c.setEvent(s);
+	    1
+		Audiance a1 = new Audiance();
+		a1.setAudianceName("pradeep");
+		
+		Audiance a2 = new Audiance();
+		a2.setAudianceName("ramlal");
+		
+		Audiance a3 = new Audiance();
+		a3.setAudianceName("sitaram");
+	
+			Set s3 = new HashSet();
+			s3.add(a1);
+			s3.add(a2);
+			s3.add(a3);
+			
+		    e1.setAudiance(s3);
+			e2.setAudiance(s3);
+			
+		Speaker s1 = new Speaker();
+		s1.setSpeakerName("raj thakre");
+		s1.setE(e1);
+          
+		Speaker s2 = new Speaker();
+		s1.setSpeakerName("nARENDRA MODI");
+		s1.setE(e1);
+ 
+		 Location l1 = new Location();
+		 l1.setLocationName("palasiya");
+		 l1.setEvent(e1);
+		 
+		 Location l2 = new Location();
+		 l2.setLocationName("bhawarkuan");
+		 l2.setEvent(e2);
+		
+    	
+         session.save(a1);		
+		 session.save(e1);
+		 session.save(e2);	
+		 session.save(s1);
+		 session.save(l1);
+		 session.save(l2);
+		 session.save(c);
+
+		tx.commit();
+		session.close();
+	}
+}

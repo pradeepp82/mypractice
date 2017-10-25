@@ -1,0 +1,48 @@
+package Stream;
+
+    import java.util.*;  
+    import java.util.stream.Collectors;  
+      
+    class Productdg{  
+        int id;  
+        String name;  
+        float price;  
+          
+        public Productdg(int id, String name, float price) {  
+            this.id = id;  
+            this.name = name;  
+            this.price = price;  
+        }  
+              
+        public int getId() {  
+            return id;  
+        }  
+        public String getName() {  
+            return name;  
+        }  
+        public float getPrice() {  
+            return price;  
+        }  
+    }  
+      
+    public class Stream_Method_refference {  
+      
+        public static void main(String[] args) {  
+              
+            List<Productdg> ProductdgsList = new ArrayList<Productdg>();  
+              
+            //Adding Productdgs  
+            ProductdgsList.add(new Productdg(1,"HP Laptop",25000f));  
+            ProductdgsList.add(new Productdg(2,"Dell Laptop",30000f));  
+            ProductdgsList.add(new Productdg(3,"Lenevo Laptop",28000f));  
+            ProductdgsList.add(new Productdg(4,"Sony Laptop",28000f));  
+            ProductdgsList.add(new Productdg(5,"Apple Laptop",90000f));  
+              
+            List<Float> ProductdgPriceList =   
+                    ProductdgsList.stream()  
+                                .filter(p -> p.price > 30000) // filtering data  
+                                .map(Productdg::getPrice)         // fetching price by referring getPrice method  
+                                .collect(Collectors.toList());  // collecting as list  
+            System.out.println(ProductdgPriceList);  
+        }  
+    }  

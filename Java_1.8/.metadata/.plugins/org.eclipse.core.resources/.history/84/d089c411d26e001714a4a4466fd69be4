@@ -1,0 +1,35 @@
+package Com.Artek;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+public class Unit1_Solution_Java7 {
+
+	public static void main(String[] args) {
+
+		List<Person> people = Arrays.asList(new Person("pp", "rp", 23),
+				new Person("ad", "dj", 21),
+				new Person("lgm", "jsdbd", 27),
+				new Person("fjn", "jkdjj", 28),
+				new Person("jvjv", "gaga", 29)
+				
+				);
+		
+		
+		// step :1  sort list y lastname
+		Collections.sort(people, new Comparator<Person>() {
+
+			@Override
+			public int compare(T o1, T o2) {
+				// TODO Auto-generated method stub
+				return 0;
+			}
+		});		
+		//step :2 create method and print all elements in the list
+		// step 3 create a method and print all element with last name start with c
+		
+		
+	}
+}

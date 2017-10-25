@@ -1,0 +1,34 @@
+package Com.Artek;
+
+import java.util.Set;
+
+public class Manager {
+
+	private Integer Managerid;
+	 private String ManagerName;
+	 
+	
+	 
+	
+	public String getManagerName() {
+		return ManagerName;
+	}
+	public void setManagerName(String managerName) {
+		ManagerName = managerName;
+	}
+	private Event s;
+	public Integer getManagerid() {
+		return Managerid;
+	}
+	public void setManagerid(Integer managerid) {
+		Managerid = managerid;
+	}
+	 
+	 
+	public Event getS() {
+		return s;
+	}
+	public void setS(Event s) {
+		this.s = s;
+	}
+}

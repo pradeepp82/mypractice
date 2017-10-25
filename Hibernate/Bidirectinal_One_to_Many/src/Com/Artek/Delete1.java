@@ -1,0 +1,28 @@
+package Com.Artek;
+
+import java.util.Set;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.classic.Session;
+
+
+public class Delete1 {
+	public static void main(String[] args) {
+	   
+		 Configuration cfg = new Configuration();
+		 cfg.configure();
+		 SessionFactory sf = cfg.buildSessionFactory();
+		 Session s = sf.openSession();
+		 Transaction tx = s.beginTransaction();
+		 
+		 Object o = (Object)s.get(Customer.class, 4);
+		 Customer v = (Customer)o;
+		   v.setCustomerid(13);
+		   s.delete(v);
+		   tx.commit();
+		  
+	}       
+
+}

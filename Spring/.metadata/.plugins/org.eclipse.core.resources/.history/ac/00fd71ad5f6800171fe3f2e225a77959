@@ -1,0 +1,12 @@
+package Com;
+
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
+
+public class Main {
+
+	public Main() {
+	
+		Resource resource = new ClassPathResource("single.xml")
+	}
+}

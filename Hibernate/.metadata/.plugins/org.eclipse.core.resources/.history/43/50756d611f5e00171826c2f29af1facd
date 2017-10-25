@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "Xmlfiles/hibernate-mapping-3.0.dtd">  
+
+ 
+ <hibernate-mapping>
+  <class name="Com.Artek.Event" table="event">
+  <id name="Eventid"> 
+  <generator class="foreign">  
+          <param name="property">m</param>  
+        </generator> 
+  </id>
+   
+  <property name="EventName"></property>
+  <property name="foreventid"></property>
+   
+<set name="audiance" cascade="all" table="Event_Audiance">
+ 
+<key column="Event_id "/>
+<many-to-many class="Com.Artek.Audiance" column="Audiance_id" />
+ 
+</set>
+
+<one-to-one name="m" class="Com.Artek.Event" cascade="all" />
+ </class>
+ 
+ 
+ </hibernate-mapping>

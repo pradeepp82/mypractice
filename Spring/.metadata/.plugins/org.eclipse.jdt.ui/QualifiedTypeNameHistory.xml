@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="Com.Artek.Student"/>
+<fullyQualifiedTypeName name="Con.Collection2.Question1"/>
+<fullyQualifiedTypeName name="CI_Map.Question2"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="java.util.Map.Entry"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="Ci_Map2.Question"/>
+<fullyQualifiedTypeName name="Si_dependent.Employee1"/>
+<fullyQualifiedTypeName name="Si_Colletion.Question"/>
+<fullyQualifiedTypeName name="org.springframework.core.io.Resource"/>
+<fullyQualifiedTypeName name="org.springframework.core.io.ClassPathResource"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.BeanFactory"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.xml.XmlBeanFactory"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="javax.swing.JButton"/>
+<fullyQualifiedTypeName name="Com.Artek.EmployeeDao"/>
+<fullyQualifiedTypeName name="Com.Artek.Employee"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.core.JdbcTemplate"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
+<fullyQualifiedTypeName name="Com.Artek.Account"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+<fullyQualifiedTypeName name="Com.Artek.AccountDao"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.PropertySource"/>
+</qualifiedTypeNameHistroy>

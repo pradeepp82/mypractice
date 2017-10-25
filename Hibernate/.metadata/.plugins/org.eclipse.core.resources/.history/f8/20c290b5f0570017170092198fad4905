@@ -1,0 +1,50 @@
+package Com.Artek;
+ 
+import java.util.HashSet;
+import java.util.Set;
+ 
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+ 
+public class Insert3 {
+ 
+	public static void main(String args[])
+	{
+ 
+		Configuration cfg = new Configuration();
+		cfg.configure("hibernate.cfg.xml"); 
+ 
+		SessionFactory factory = cfg.buildSessionFactory();
+		Session session = factory.openSession();		
+ 
+		 
+		Course c1=new Course();
+		//c1.setCourseid(1);
+		c1.setCourseName("Hibernate");
+		c1.setDuration(7);
+ 
+		Course c2=new Course();
+		//c2.setCourseid(2);
+		c2.setCourseName("Java");
+		c2.setDuration(30);
+ 
+		Set s =new HashSet();
+		      s.add(c1);
+		      s.add(c2);
+ 
+		 
+		    Transaction tx = session.beginTransaction();
+ 
+		                      session.save(c1);
+		                      session.save(c2);
+ 
+		    tx.commit();
+ 
+		    session.close();
+		    System.out.println("Many To Many Bi-Directional is Done..!!");
+		    factory.close();
+ 
+	}
+}

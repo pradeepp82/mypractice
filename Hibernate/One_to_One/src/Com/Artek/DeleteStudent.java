@@ -1,0 +1,36 @@
+package Com.Artek;
+ 
+import java.util.Set;
+import java.util.concurrent.CountDownLatch;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+ 
+public class DeleteStudent {
+ 
+	public static void main(String args[])
+	{
+ 
+		Configuration cfg = new Configuration();
+		cfg.configure("hibernate.cfg.xml"); 
+ 
+		SessionFactory factory = cfg.buildSessionFactory();
+		Session session = factory.openSession();		
+         Transaction tx = session.beginTransaction();
+        //Object o = session.get(Address.class, new Integer(2));
+       // Address a =(Address)o;
+         
+         Student s = new Student();
+         s.setStudentid(1);
+        
+        
+         
+        
+        session.delete(s);
+        tx.commit();
+        
+      
+	}
+}

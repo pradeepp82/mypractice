@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"Xmlfiles/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping>
+<class name="Com.Artek.Location" table="location">
+ 
+<id name="locationid">
+  <generator class="increment"></generator>
+</id>
+ 
+<property name="locationName" />
+ 
+<set name="event" inverse="false" cascade="all" table="Event_Location">
+ 
+<key column="location_id" />
+<many-to-many class="Com.Artek.Event" column="Event_id"/>
+ 
+</set>
+ 
+</class>
+ 
+</hibernate-mapping>

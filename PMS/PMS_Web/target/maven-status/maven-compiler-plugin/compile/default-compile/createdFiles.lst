@@ -1,0 +1,12 @@
+Com/Aartek/Configuration/AppConfig.class
+Com/Aartek/aop/EmployeeManager.class
+Com/Aartek/Controller/LoginController.class
+Com/Aartek/Controller/RegistrationController.class
+Com/Aartek/Configuration/HibernateConfiguration.class
+Com/Aartek/Controller/ProjectController.class
+Com/Aartek/aop/EmployeeCRUDAspect.class
+Com/Aartek/Interceptor/LoginInterceptor.class
+Com/Artek/Validator/ProjectValidator.class
+Com/Artek/Validator/RegistrationValidator.class
+Com/Aartek/wscontroller/UserController.class
+Com/Aartek/Configuration/AppInitializer.class

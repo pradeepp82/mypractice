@@ -1,0 +1,47 @@
+package Com.Artek;
+ 
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
+
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+ 
+public class Update1 {
+ 
+public static void main(String args[])
+{
+ 
+Configuration cfg = new Configuration();
+cfg.configure("hibernate.cfg.xml");
+ 
+  SessionFactory factory = cfg.buildSessionFactory();
+  Session session = factory.openSession();
+  Query q = session.createQuery("from Vendor v");
+  List l= q.list();
+  Iterator itr = l.iterator();
+  Transaction tx =session.beginTransaction();
+  while (itr.hasNext()) {
+	Object   o =  itr.next();
+	System.out.println(o);
+	Vendor v =(Vendor)o;
+	 Set s = v.getChildren();
+	 Iterator itr1 = s.iterator();
+	 while (itr1.hasNext()) {
+		Customer [] c1 = (Customer [])itr1.next();
+		System.out.println(c1[0]);
+		
+	}
+	 
+	
+	
+}
+   session.close();
+   factory.close();
+   
+}
+}

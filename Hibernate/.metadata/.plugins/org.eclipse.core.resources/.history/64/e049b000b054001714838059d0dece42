@@ -1,0 +1,7 @@
+package Com.Artek;
+import java.util.Set;
+public class Vendor {
+   private int venderId;
+   private String venderName;
+   private Set children;
+}

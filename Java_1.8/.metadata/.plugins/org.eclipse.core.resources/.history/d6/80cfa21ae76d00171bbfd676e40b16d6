@@ -1,0 +1,14 @@
+package Com.Artek;
+interface A{
+	
+ void show();
+}
+
+public class LamdaDemo {
+
+	public static void main(String[] args) {
+		 
+
+	}
+
+}

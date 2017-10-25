@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Student Management</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    .jumbotron {
+    background-image: url("image/12510319-Business-people-working-together-in-office-Stock-Photo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 567px;
+}
+
+ form {
+    padding-top: 25px;
+}
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #222;
+      padding: 25px;
+    }
+    footer p {
+    color: blanchedalmond;
+}
+.jumbotron {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 0px;
+    color: inherit;
+    background-color: #eee;
+}
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="http://localhost:8080/StudentManagement2/#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="Adminlogin.html"><span></span>Admin</a></li>
+         <li><a href="Studentlogin.html"><span ></span>Student</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <div class="container text-center">
+     <h1>Student Registered Succesfully </h1>
+      <h3>Want to add more students </h3>
+      <a href="StudentRegistration.html"><span></span>Admin</a>
+        
+  
+  </div>
+</div>
+<footer class="container-fluid text-center">
+  <p>&copy; Indore Institute of Science & Technology;</p>
+</footer>
+
+</body>
+</html>

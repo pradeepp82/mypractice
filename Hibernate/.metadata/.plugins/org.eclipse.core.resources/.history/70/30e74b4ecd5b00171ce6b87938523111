@@ -1,0 +1,23 @@
+package Com.Artek;
+ 
+import java.util.HashSet;
+import java.util.Set;
+ 
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.AnnotationConfiguration;
+import org.hibernate.cfg.Configuration;
+ 
+public class Save { 
+ 
+	public static void main(String args[])
+	{
+		 AnnotationConfiguration acfg = new AnnotationConfiguration();
+		 acfg.configure();
+		 SessionFactory sf = acfg.buildSessionFactory();
+		 Session session = sf.openSession();
+		 System.out.println("pp");
+	}
+ 
+}

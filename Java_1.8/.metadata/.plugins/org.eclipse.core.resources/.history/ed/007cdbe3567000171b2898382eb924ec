@@ -1,0 +1,33 @@
+    import java.util.*;  
+    import java.util.stream.Collectors;  
+    class Product4{  
+        int id;  
+        String name;  
+        float price;  
+        public Product4(int id, String name, float price) {  
+            this.id = id;  
+            this.name = name;  
+            this.price = price;  
+        }  
+    }  
+      
+    public class JavaStreamExample {  
+        public static void main(String[] args) {  
+            List<Product4> Product4sList = new ArrayList<Product4>();  
+      
+            //Adding Product4s  
+            Product4sList.add(new Product4(1,"HP Laptop",25000f));  
+            Product4sList.add(new Product4(2,"Dell Laptop",30000f));  
+            Product4sList.add(new Product4(3,"Lenevo Laptop",28000f));  
+            Product4sList.add(new Product4(4,"Sony Laptop",28000f));  
+            Product4sList.add(new Product4(5,"Apple Laptop",90000f));  
+              
+            // Converting Product4 List into Set  
+            Set<Float> Product4PriceList =   
+                Product4sList.stream()  
+                .filter(Product4->Product4.price < 30000)   // filter Product4 on the base of price  
+                .map(Product4->Product4.price)  
+                .collect(Collectors.toSet());   // collect it as Set(remove duplicate elements)  
+            System.out.println(Product4PriceList);  
+        }  
+    }  

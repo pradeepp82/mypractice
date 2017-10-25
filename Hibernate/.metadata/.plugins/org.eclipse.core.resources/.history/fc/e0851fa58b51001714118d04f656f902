@@ -1,0 +1,12 @@
+package Com.Artek;
+
+import javax.security.auth.login.Configuration;
+
+import org.hibernate.SessionFactory;
+
+public class Test {
+    private static SessionFactory factory;
+    public static void main(String[] args) {
+		Configuration cfg = new Configuration();
+	}
+}

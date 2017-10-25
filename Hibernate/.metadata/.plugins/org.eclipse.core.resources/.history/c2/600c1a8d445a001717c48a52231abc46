@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"Xmlfiles/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+ <class name="Per_SubClass.Payment" table="payment1">
+ <id name="paymentid">
+  <generator class="generator"></generator>
+ </id> 
+ <property name="amount"></property>
+ <joined-subclass name="Per_SubClass.Cheque" table="cheque1">
+  <key-column="dummy1"/>
+  <property name="chequetype"></property>
+ 
+ </joined-subclass>
+ <joined-subclass name="Per_SubClass.CreditCard">
+  <key-column="dummy2" />
+  <property name="chequetype"></property> 
+ </joined-subclass>
+ 
+ </class>
+</hibernate-mapping>

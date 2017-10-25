@@ -1,0 +1,30 @@
+package Com.Artek;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="manager")
+public class Manager {
+
+
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private Integer managerid;
+	private String managerName;
+	public Integer getManagerid() {
+		return managerid;
+	}
+	public void setManagerid(Integer managerid) {
+		this.managerid = managerid;
+	}
+	public String getManagerName() {
+		return managerName;
+	}
+	public void setManagerName(String managerName) {
+		this.managerName = managerName;
+	}
+}

@@ -1,0 +1,11 @@
+package Nashorn;
+
+    import javax.script.*;  
+    public class Example2 {  
+        public static void main(String[] args) throws Exception{  
+            // Creating script engine  
+            ScriptEngine ee = new ScriptEngineManager().getEngineByName("Nashorn");  
+            // Evaluating Nashorn code  
+            ee.eval("print('Hello Nashorn');");  
+        }  
+    }  

@@ -1,0 +1,26 @@
+package Com.Artek;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.classic.Session;
+
+public class Update {
+
+	 public static void main(String[] args) {
+		 Configuration cfg = new Configuration();
+		 cfg.configure();
+		 SessionFactory sf = cfg.buildSessionFactory();
+		 Session session = sf.openSession();
+		  Transaction tx = session.beginTransaction();
+		  Object o =(Object)session.load(Product.class, 1);
+		  Product p =(Product)o;
+		  p.setProductname(" wah re re jhamru");
+		  p.setPrice(15);
+		  System.out.println(p.getV());
+		  session.update(p);
+		  tx.commit();
+		  
+		  
+	}
+}

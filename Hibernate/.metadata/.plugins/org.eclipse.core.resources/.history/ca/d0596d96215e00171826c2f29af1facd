@@ -1,0 +1,20 @@
+package Com.Artek;
+
+public class Speaker {
+	
+	private Integer speakerid;
+	private String speakerName;
+	public Integer getSpeakerid() {
+		return speakerid;
+	}
+	public void setSpeakerid(Integer speakerid) {
+		this.speakerid = speakerid;
+	}
+	public String getSpeakerName() {
+		return speakerName;
+	}
+	public void setSpeakerName(String speakerName) {
+		this.speakerName = speakerName;
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Com.Artek.Insert4&apos; to &apos;UpdateCourse&apos;&#x0A;- Original project: &apos;Many_to_Many&apos;&#x0A;- Original element: &apos;Com.Artek.Insert4&apos;&#x0A;- Renamed element: &apos;Com.Artek.UpdateCourse&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Insert4&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Com.Artek{Insert4.java[Insert4" matchStrategy="1" name="UpdateCourse" qualified="false" references="true" similarDeclarations="false" stamp="1498206153871" textual="false" version="1.0"/>
+</session>

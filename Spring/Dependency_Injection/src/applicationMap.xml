@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans  
+xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans   
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+
+<bean id="answer1" class="Ci_Map2.Answer">
+<constructor-arg value="1"></constructor-arg>
+<constructor-arg value="java is a programing language"></constructor-arg>
+<constructor-arg value="12/12/2017"></constructor-arg>
+</bean>
+
+<bean id="answer2" class="Ci_Map2.Answer">
+<constructor-arg value="2"></constructor-arg>
+<constructor-arg value="java is platform independent"></constructor-arg>
+<constructor-arg value="12/12/2017"></constructor-arg>
+</bean>
+
+<bean id="user1" class="Ci_Map2.User">
+<constructor-arg value="1"></constructor-arg>
+<constructor-arg value="pradeep panwar"></constructor-arg>
+<constructor-arg value="panwarp82@gmail.com"></constructor-arg>
+</bean>
+
+<bean id="user2" class="Ci_Map2.User">
+<constructor-arg value="2"></constructor-arg>
+<constructor-arg value="dipesh mapare"></constructor-arg>
+<constructor-arg value="dipeshgmail.com"></constructor-arg>
+</bean>
+
+<bean id="question" class="Ci_Map2.Question">  
+<constructor-arg value="1"></constructor-arg>  
+<constructor-arg value="What is Java?"></constructor-arg>  
+<constructor-arg>  
+<map>  
+<entry key-ref="answer1" value-ref="user1"></entry>  
+<entry key-ref="answer2" value-ref="user2"></entry>  
+</map>  
+</constructor-arg>  
+</bean>  
+</beans>

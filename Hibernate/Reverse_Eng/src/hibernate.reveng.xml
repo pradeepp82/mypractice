@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+  <table-filter match-catalog="Event_mgmt_anot" match-name="audiance"/>
+  <table-filter match-catalog="Event_mgmt_anot" match-name="company"/>
+  <table-filter match-catalog="Event_mgmt_anot" match-name="event"/>
+  <table-filter match-catalog="Event_mgmt_anot" match-name="location"/>
+  <table-filter match-catalog="Event_mgmt_anot" match-name="manager"/>
+  <table-filter match-catalog="Event_mgmt_anot" match-name="speaker"/>
+</hibernate-reverse-engineering>

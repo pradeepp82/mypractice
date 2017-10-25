@@ -1,0 +1,9 @@
+package Com.Artek;
+
+import org.hibernate.cfg.Configuration;
+
+public class Insert {
+  
+	 Configuration cf = new Configuration();
+	 cf.configure();
+}

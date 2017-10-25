@@ -1,0 +1,57 @@
+package Com.Artek;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Scanner; 
+import java.util.Set;
+
+import org.hibernate.Query;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.classic.Session;
+
+public class Select {
+
+	public static void main(String[] args) {
+		
+       Configuration cfg = new Configuration();
+       cfg.configure();
+       SessionFactory sf = cfg.buildSessionFactory();
+       Session session = sf.openSession();
+       Scanner sc=new Scanner(System.in);   
+       System.out.println("Enter name of company");  
+       String name=sc.next();  
+       Query q =session.createQuery("from Company where CompanyName=:name");
+       q.setParameter("name", name);
+       List l = q.list();
+       Iterator itr = l.iterator();
+       if (itr.hasNext()) {
+		Object object = (Object) itr.next();
+		Company c = (Company)object;
+		System.out.println(c.getCompanyid()+": "+c.getCompanyName());
+		
+		Set s = c.getEvent();
+		 for (Object object2 : s) {
+			Event e = (Event)object2;
+			int locid =e.getEventid();
+			System.out.println(locid);
+			Object o = e.getM();
+			Manager m =(Manager)o;
+			System.out.println(m.getManagerName());
+		  
+			Query q1 =session.createQuery("from Location where event=:locid");
+		      q1.setParameter("locid", locid);
+		       List l1 = q1.list();
+		       Iterator itr1 = l1.iterator();
+		       for (Object object3 : l1) {
+				Location loc= new Location();
+				System.out.println(loc.getLocationName());
+			}
+	     }
+		
+	}else{
+		System.out.println("no company Available");
+	}
+ 
+	}
+}

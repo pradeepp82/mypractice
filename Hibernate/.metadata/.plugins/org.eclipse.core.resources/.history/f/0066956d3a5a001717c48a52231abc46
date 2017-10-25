@@ -1,0 +1,7 @@
+package Per_SubClass;
+
+public class Payment {
+   
+	 private Integer paymentid;
+	 private double amount;
+}

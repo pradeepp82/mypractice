@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+ 
+<beans>
+  <bean id="cat" class="Pack2.Category" autowire="byName">
+        <property name="name" value="General Books" />
+  </bean>
+  <bean id="bk" class="Pack2.Book" autowire="byName">
+      <property name="bookname" value="The Kids" /> 
+        <property name="bookprice" value="300" />
+  </bean>
+  <bean id="p" class="Pack2.Pen">
+
+        <property name="name" value="pashupastra" />
+  </bean> 
+  <bean id="c" class="Pack2.Copy">
+        <property name="id" value="11" />
+        <property name="name" value="pashupastra" />
+  </bean> 
+</beans>

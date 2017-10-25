@@ -1,0 +1,8 @@
+package Com.Artek;
+
+public class Customer {
+  private Integer customerId;
+  private String customerName;
+  private  int forevenId;
+ 
+}

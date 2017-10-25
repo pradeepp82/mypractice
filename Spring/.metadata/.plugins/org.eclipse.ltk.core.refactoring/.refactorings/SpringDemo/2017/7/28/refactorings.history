@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;SpringDemo/src/applicationContext.xml&apos; to &apos;pradeep.xml&apos;" description="Rename resource &apos;applicationContext.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/applicationContext.xml" name="pradeep.xml" stamp="1499666293531" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;SpringDemo/src/pradeep.xml&apos; to &apos;applicationContext.xml&apos;" description="Rename resource &apos;pradeep.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/pradeep.xml" name="applicationContext.xml" stamp="1499666347719" updateReferences="true"/>
+</session>

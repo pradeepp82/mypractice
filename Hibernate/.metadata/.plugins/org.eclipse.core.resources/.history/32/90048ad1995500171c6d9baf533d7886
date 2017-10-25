@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"Xmlfiles/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping>
+<class name="Com.Artek.Customer" table="customer">
+ 
+<id name="customerid"  >
+ <generator class="increment"/>
+</id>
+<property name="customerName" />
+<many-to-one name="parentObject"  class="Com.Artek.Vendor" cascade="all" />
+ 
+</class>
+</hibernate-mapping>
+

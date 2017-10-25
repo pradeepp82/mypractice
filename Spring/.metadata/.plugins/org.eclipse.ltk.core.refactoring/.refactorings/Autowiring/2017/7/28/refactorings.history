@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Com.Artek.Logic&apos; to &apos;Logic_by_name&apos;&#x0A;- Original project: &apos;Autowritting&apos;&#x0A;- Original element: &apos;Com.Artek.Logic&apos;&#x0A;- Renamed element: &apos;Com.Artek.Logic_by_name&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Logic&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Com.Artek{Logic.java[Logic" matchStrategy="1" name="Logic_by_name" qualified="false" references="true" similarDeclarations="false" stamp="1499849601306" textual="false" version="1.0"/>
+</session>

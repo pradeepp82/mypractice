@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"Xmlfiles/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+ <class name ="Com.Artek.Address" table ="address">
+ <id name="addressid">  
+          <generator class="foreign">  
+          <param name="property">ssd</param>  
+          </generator>  
+          </id>  
+ <property name="city"></property>
+ <property name="state"></property>
+ 
+ <one-to-one name="s" class="Com.Artek.Student" cascade="all"/>
+ 
+ 
+ 
+ </class>
+</hibernate-mapping>

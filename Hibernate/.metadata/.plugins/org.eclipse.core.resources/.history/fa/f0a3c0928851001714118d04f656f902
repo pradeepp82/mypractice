@@ -1,0 +1,15 @@
+package Com.Artek;
+
+import java.io.Serializable;
+
+import org.hibernate.EmptyInterceptor;
+
+public class ConsoleLogInterceptor extends EmptyInterceptor{
+	
+	private static  final  long serialVersionId =1L;
+	
+	@override
+	
+	public void onDelete(Object entity, Serializable id,Object [] state , String [] propertyNames,Type[] types )
+
+}

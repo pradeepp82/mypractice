@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="/home/pp/Spring_Hibernate jar/org.springframework.jdbc-3.0.0.M2.jar/org.springframework.jdbc-3.0.0.M2.jar"/>
+	<classpathentry kind="lib" path="/home/pp/Spring_Hibernate jar/com.mysql.jdbc_5.1.5.jar"/>
+	<classpathentry kind="lib" path="/home/pp/Spring_Hibernate jar/com.springsource.net.sf.cglib-2.2.0.jar"/>
+	<classpathentry kind="lib" path="/home/pp/Spring_Hibernate jar/com.springsource.org.apache.commons.logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/home/pp/Spring_Hibernate jar/com.springsource.org.hibernate-3.2.6.ga.jar"/>
+	<classpathentry kind="lib" path="/home/pp/Spring_Hibernate jar/commons-pool-1.4.jar"/>
+	<classpathentry kind="lib" path="/home/pp/Spring_Hibernate jar/javax.transaction.jar"/>
+	<classpathentry kind="lib" path="/home/pp/Spring_Hibernate jar/mysql-connector.jar"/>
+	<classpathentry kind="lib" path="/home/pp/Spring_Hibernate jar/org.apache.commons.collections.jar"/>
+	<classpathentry kind="lib" path="/home/pp/Spring_Hibernate jar/org.apache.commons.dbcp.jar"/>
+	<classpathentry kind="lib" path="/home/pp/Spring_Hibernate jar/org.springframework.beans-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="/home/pp/Spring_Hibernate jar/org.springframework.core-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="/home/pp/Spring_Hibernate jar/org.springframework.orm-3.0.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/home/pp/Spring_Hibernate jar/spring-hibernate.jar"/>
+	<classpathentry kind="lib" path="/home/pp/Spring_Hibernate jar/spring-hibernate3.jar"/>
+	<classpathentry kind="lib" path="/home/pp/Spring_Hibernate jar/spring-tx.jar"/>
+	<classpathentry kind="lib" path="/home/pp/app/hibernatejar/dom4j-1.6.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

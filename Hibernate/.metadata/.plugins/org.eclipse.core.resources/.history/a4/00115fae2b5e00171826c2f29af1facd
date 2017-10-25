@@ -1,0 +1,11 @@
+package Com.Artek;
+
+import java.util.Set;
+
+public class Location {
+
+	private  Integer locationid;
+	private String locationName;
+	private Set event;
+	
+}

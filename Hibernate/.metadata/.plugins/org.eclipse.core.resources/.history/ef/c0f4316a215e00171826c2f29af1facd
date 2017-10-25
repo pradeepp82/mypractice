@@ -1,0 +1,8 @@
+package Com.Artek;
+
+public class Speaker {
+	
+	private Integer speakerid;
+	private String speakerName;
+
+}

@@ -1,0 +1,4 @@
+com.mysql.jdbc.Driver=com.mysql.jdbc.Driver
+connection.url=jdbc:mysql://localhost:3306/Spring_Orm
+connection.username=root
+connection.password=root

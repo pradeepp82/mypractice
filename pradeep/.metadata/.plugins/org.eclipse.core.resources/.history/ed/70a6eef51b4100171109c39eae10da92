@@ -1,0 +1,135 @@
+<%@ page import = "java.io.*,java.util.*,java.sql.*"%>
+<%@ page import = "javax.servlet.http.*,javax.servlet.*" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Student Management</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    .jumbotron {
+    background-image: url("image/Students-studying-outdoors.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 567px;
+}
+
+ form {
+    padding-top: 25px;
+}
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #222;
+      padding: 25px;
+    }
+    footer p {
+    color: blanchedalmond;
+}
+.jumbotron {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 0px;
+    color: inherit;
+    background-color: #eee;
+}
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="http://localhost:8080/StudentManagement2/#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="Adminlogin.html"><span ></span>Admin</a></li>
+         <li><a href="Studentlogin.html"><span ></span>Student</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <div class="container text-center">
+     <%
+
+if(session!=null){
+	String name =(String)session.getAttribute("name");
+	String rollno =(String)session.getAttribute("rollno");
+	
+	Class.forName("com.mysql.jdbc.Driver");  
+    java.sql.Connection con=DriverManager.getConnection(  
+    "jdbc:mysql://localhost:3306/Student","root","root"); 
+     PreparedStatement pst = con.prepareStatement("select * from Student_data where Name= ?   and Rollno= ?");
+   pst.setString(1,name);
+   pst.setString(2,rollno);
+   ResultSet rs =pst.executeQuery();
+   if(rs.next()){
+   	
+          int id  = rs.getInt("Id");
+		  String age = rs.getString("Name");
+		  String first = rs.getString("Email");
+		  String last = rs.getString("Rollno");
+		  String Sem = rs.getString("Sem");
+          
+		              
+   %>
+   
+   <center>
+             <h2>UPDATE DATA HERE...</h2>
+          <form action="Update.jsp" method="post">
+          <table>
+          <tr>
+          <td>Id:<input type="text" name="id" ></td></tr>
+          <td>Name:<input type="text" name="name" ></td></tr>
+          <td>Email:<input type="email" name="email" ></td></tr>
+          <td>Rollno:<input type="number" name="rollno" ></td></tr>
+          <td>Sem:<input type="text" name="sem" ></td></tr>
+          <td>Marks:<input type="number" name="marks" ></td></tr>
+          </tr>
+          </table>>
+          
+          </form>
+          </center>>
+   <% 
+   	
+   }
+     		  
+}
+	
+
+%>
+     
+  
+  </div>
+</div>
+<footer class="container-fluid text-center">
+  <p>&copy; Indore Institute of Science & Technology;</p>
+</footer>
+
+</body>
+</html>

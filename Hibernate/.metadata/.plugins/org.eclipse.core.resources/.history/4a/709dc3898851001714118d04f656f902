@@ -1,0 +1,11 @@
+package Com.Artek;
+
+import org.hibernate.EmptyInterceptor;
+
+public class ConsoleLogInterceptor extends EmptyInterceptor{
+	
+	private static  final  long serialVersionId =1l;
+	
+	@override
+
+}

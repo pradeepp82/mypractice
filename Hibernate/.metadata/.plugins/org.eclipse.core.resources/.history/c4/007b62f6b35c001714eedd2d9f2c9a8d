@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "Xmlfiles/hibernate-mapping-3.0.dtd">  
+
+ 
+ <hibernate-mapping>
+  <class name="Com.Artek.Product" table="vendor">
+  <id name="venderId"> 
+  <generator class="increment"></generator>
+  </id>
+   
+  <property name="venderName"></property>
+   <set name="children" cascade="all" >
+ 
+      <key column="forevenId" />
+      <one-to-many class="Com.Artek.Customer" />
+ 
+</set>
+ </class>
+ 
+ 
+ </hibernate-mapping>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"Xmlfiles/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="Com.Artek.Student" table="student">
+<id name="studentid">
+ <generator class="increment" ></generator>
+</id>
+<property  name="studentName"></property>
+<property  name="marks"></property>
+ <set name="courses" cascade="all" table="student_courses">
+<key column="studentid"></key>
+<many-to-many class="Com.Artek.Course" column="course_id"/>
+</set>
+</class>
+
+</hibernate-mapping>

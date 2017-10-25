@@ -1,0 +1,5 @@
+#Tomcat publish data
+#Wed Sep 27 11:40:16 IST 2017
+org.eclipse.jst.j2ee.server\:mtld-data=WEB-INF/lib/mtld-data-0.0.1.jar
+org.eclipse.jst.j2ee.server\:/binary\:/home/pp/.m2/repository/org/springframework/spring-web/3.2.0.RELEASE/spring-web-3.2.0.RELEASE.jar=WEB-INF/lib/spring-web-3.2.0.RELEASE.jar
+org.eclipse.jst.j2ee.server\:mtld-services=WEB-INF/lib/mtld-services-1.0.0.jar

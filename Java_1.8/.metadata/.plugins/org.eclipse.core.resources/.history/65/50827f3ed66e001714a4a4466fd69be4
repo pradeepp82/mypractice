@@ -1,0 +1,52 @@
+package Com.Artek;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+public class Unit1_Solution_Java7 {
+
+	public static void main(String[] args) {
+
+		List<Person> people = Arrays.asList(new Person
+				("pp", "rp", 23),
+				new Person("ad", "zj", 21),
+				new Person("lgm", "ysdbd", 27),
+				new Person("fjn", "rkdjj", 28),
+				new Person("jvjv", "aga", 29)
+				
+				);
+		
+		
+		// step :1  sort list  by lastname
+		Collections.sort(people, new Comparator<Person>() {
+
+			@Override
+			public int compare(Person o1, Person o2) {
+				// TODO Auto-generated method stub
+				return o1.getLastname().compareTo(o2.getLastname());
+			}
+		});		
+		//step :2 create method and print all elements in the list
+		printall(people);
+		// step 3 create a method and print all element with last name start with c
+		printlastnamewithc(people);
+		
+	}
+
+	private static void printlastnamewithc(List<Person> people) {
+		 for (Person person : people) {
+			 if(person.getLastname().startsWith("c"))
+			
+		}
+		
+	}
+
+	private static void printall(List<Person> people) {
+		 for (Person person : people) {
+			System.out.println(person);
+		}
+		
+	}
+}

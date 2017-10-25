@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+locationorg.eclipse.jst.server.tomcat.runtime.80=/home/pp/apache-tomcat-8.0.44
+locationorg.eclipse.jst.server.tomcat.runtime.85=/opt/tomcat
+locationorg.eclipse.jst.server.tomcat.runtime.90=/home/pp/app/apache-tomcat-9.0.0.M19

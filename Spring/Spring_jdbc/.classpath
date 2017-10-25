@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="/home/pp/Spring_Hibernate jar/com.springsource.org.apache.commons.logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/home/pp/Spring_Hibernate jar/org.springframework.beans-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="/home/pp/Spring_Hibernate jar/org.springframework.core-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="/home/pp/Spring_Hibernate jar/spring-tx.jar"/>
+	<classpathentry kind="lib" path="/home/pp/Spring_jdbc_jar/org.springframework.context.jar"/>
+	<classpathentry kind="lib" path="/home/pp/app/com.mysql.jdbc_5.1.5.jar"/>
+	<classpathentry kind="lib" path="/home/pp/Downloads/org.springframework.jdbc.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

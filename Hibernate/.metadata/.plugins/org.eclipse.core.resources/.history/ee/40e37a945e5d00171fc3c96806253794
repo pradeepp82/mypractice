@@ -1,0 +1,13 @@
+package Anotation;
+
+import org.hibernate.annotations.Entity;
+import org.hibernate.annotations.NamedQuery;
+
+@Entity
+@NamedQuery(name="myquery" ,query="select * from  Number where name=:name")
+public class Number {
+
+	private Integer id;
+	private String name;
+	private String place;
+}

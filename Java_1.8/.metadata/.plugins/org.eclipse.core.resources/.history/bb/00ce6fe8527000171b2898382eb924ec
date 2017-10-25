@@ -1,0 +1,21 @@
+package Functional_interface;
+
+@FunctionalInterface  
+interface sayab{  
+    void say(String msg);   // abstract method  
+      
+    // It can contain any number of methods of Object class.  
+    int hashCode();  
+    String toString();  
+    boolean equals(Object obj);  
+}  
+public class Functional_Object_Method implements sayab{  
+  
+    public void say(String msg){  
+        System.out.println(msg);  
+    }  
+    public static void main(String[] args) {  
+        Functional_Object_Method fie = new Functional_Object_Method();  
+        fie.say("Hello there");  
+    }  
+}  

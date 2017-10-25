@@ -1,0 +1,12 @@
+package Per_SubClass;
+
+public class Creditcard1 extends Payment1 {
+	
+	private String creditcardtype;
+
+	 
+
+	 
+	
+
+}

@@ -1,0 +1,49 @@
+package Com.Artek;
+ 
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+ 
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+ 
+public class CompanyUpdate2 {
+ 
+public static void main(String args[])
+{
+ 
+Configuration cfg = new Configuration();
+cfg.configure("hibernate.cfg.xml");
+ 
+SessionFactory factory = cfg.buildSessionFactory();
+Session session = factory.openSession();
+Transaction tx = session.getTransaction();
+   Object o =session.get(Company.class, new Integer(3));
+   Company v =(Company)o;
+    
+   
+   Set s = v.getChildren();
+   
+   Iterator itr =s.iterator();
+   
+   while (itr.hasNext()) {
+	  
+	Object o1 =  itr.next();
+	 Employee  c = (Employee )o1;
+	 System.out.println(c.getEmployeeid());
+	 System.out.println(c.getEmployeeName());
+	 
+
+	 session.update(c);
+	  tx.commit();
+	   
+		 
+    }
+   
+   session.close();
+   factory.close();
+   
+}
+}

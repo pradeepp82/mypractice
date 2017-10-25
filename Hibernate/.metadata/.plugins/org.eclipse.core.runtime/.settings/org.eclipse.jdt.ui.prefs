@@ -1,0 +1,22 @@
+content_assist_disabled_computers=org.eclipse.jdt.ui.textProposalCategory\u0000org.eclipse.mylyn.java.ui.javaAllProposalCategory\u0000org.eclipse.recommenders.calls.rcp.proposalCategory.templates\u0000org.eclipse.jdt.ui.javaAllProposalCategory\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\u0000org.eclipse.jdt.ui.javaNoTypeProposalCategory\u0000org.eclipse.recommenders.chain.rcp.proposalCategory.chain\u0000
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="Com.Artek.Vendor"><rhs name\="Com.Artek.Vendor"/></lhs><lhs name\="Com.Artek.Customer"><rhs name\="Com.Artek.Customer"/></lhs><lhs name\="Com.Artek.Company"><rhs name\="Com.Artek.Company"/></lhs><lhs name\="Com.Artek.Employee"><rhs name\="Com.Artek.Employee"/></lhs><lhs name\="org.hibernate.cfg.Configuration"><rhs name\="org.hibernate.cfg.Configuration"/><rhs name\="org.hibernate.cfg.AnnotationConfiguration"/></lhs><lhs name\="Com.Artek.Student"><rhs name\="Com.Artek.Student"/></lhs><lhs name\="Com.Artek.Course"><rhs name\="Com.Artek.Course"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.HashSet"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.HashSet"/></lhs><lhs name\="java.util.Set"><rhs name\="java.util.HashSet"/></lhs><lhs name\="Com.Artek.Address"><rhs name\="Com.Artek.Address"/></lhs><lhs name\="Table_per_class.Payment"><rhs name\="Table_per_class.Payment"/><rhs name\="Table_per_class.Cheque"/><rhs name\="Table_per_class.CreditCard"/></lhs><lhs name\="Table_per_class.Cheque"><rhs name\="Table_per_class.Cheque"/></lhs><lhs name\="Table_per_class.CreditCard"><rhs name\="Table_per_class.CreditCard"/></lhs><lhs name\="Per_SubClass.Creditcard"><rhs name\="Per_SubClass.Creditcard"/></lhs><lhs name\="Per_SubClass.Payment"><rhs name\="Per_SubClass.Cheque"/></lhs><lhs name\="Per_SubClass.Cheque"><rhs name\="Per_SubClass.Cheque"/></lhs><lhs name\="Per_SubClass.Payment1"><rhs name\="Per_SubClass.Payment1"/><rhs name\="Per_SubClass.Cheque1"/><rhs name\="Per_SubClass.Creditcard1"/></lhs><lhs name\="Per_SubClass.Creditcard1"><rhs name\="Per_SubClass.Creditcard1"/></lhs><lhs name\="Per_SubClass.Cheque1"><rhs name\="Per_SubClass.Cheque1"/></lhs><lhs name\="Per_concrete_class.Payment2"><rhs name\="Per_concrete_class.Cheque2"/></lhs><lhs name\="Per_concrete_class.Cheque2"><rhs name\="Per_concrete_class.Cheque2"/></lhs><lhs name\="org.hibernate.cfg.AnnotationConfiguration"><rhs name\="org.hibernate.cfg.AnnotationConfiguration"/></lhs><lhs name\="Com.Artek.Product"><rhs name\="Com.Artek.Product"/></lhs><lhs name\="java.lang.Enum"><rhs name\="javax.persistence.FetchType"/><rhs name\="javax.persistence.CascadeType"/></lhs><lhs name\="Com.Artek.Categories"><rhs name\="Com.Artek.Categories"/></lhs><lhs name\="Com.Artek.Item"><rhs name\="Com.Artek.Item"/></lhs><lhs name\="Anotation.Number"><rhs name\="Anotation.Number"/></lhs><lhs name\="Anotation.Product"><rhs name\="Anotation.Product"/></lhs><lhs name\="Com.Artek.Event"><rhs name\="Com.Artek.Event"/></lhs><lhs name\="Com.Artek.Manager"><rhs name\="Com.Artek.Manager"/></lhs><lhs name\="Com.Artek.Audiance"><rhs name\="Com.Artek.Audiance"/></lhs><lhs name\="Com.Artek.Speaker"><rhs name\="Com.Artek.Speaker"/></lhs><lhs name\="Com.Artek.Location"><rhs name\="Com.Artek.Location"/></lhs></history>
+content_assist_number_of_computers=25
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+eclipse.preferences.version=1
+fontPropagated=true
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.internal.ui.navigator.librariesnode=true
+org.eclipse.jdt.ui.editor.tab.width=
+org.eclipse.jdt.ui.formatterprofiles.version=13
+org.eclipse.jdt.ui.javadoclocations.migrated=true
+org.eclipse.jdt.ui.text.code_templates_migrated=true
+org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.text.templates_migrated=true
+org.eclipse.jface.textfont=1|Monospace|10.0|0|GTK|1|;
+proposalOrderMigrated=true
+spelling_locale_initialized=true
+tabWidthPropagated=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

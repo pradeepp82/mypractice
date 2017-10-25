@@ -1,0 +1,11 @@
+127.0.0.1 - - [27/Jul/2017:15:31:06 +0530] "GET / HTTP/1.1" 404 994
+127.0.0.1 - - [27/Jul/2017:15:31:07 +0530] "GET /StudentManagement2/ HTTP/1.1" 200 2359
+127.0.0.1 - - [27/Jul/2017:15:31:11 +0530] "GET /StudentManagement2/image/73_big.jpg HTTP/1.1" 200 43683
+127.0.0.1 - - [27/Jul/2017:15:31:29 +0530] "GET /StudentManagement2/ HTTP/1.1" 200 2359
+127.0.0.1 - - [27/Jul/2017:15:31:34 +0530] "GET /StudentManagement2/image/73_big.jpg HTTP/1.1" 200 43683
+127.0.0.1 - - [27/Jul/2017:15:31:34 +0530] "GET /favicon.ico HTTP/1.1" 404 1016
+127.0.0.1 - - [27/Jul/2017:15:31:34 +0530] "GET /favicon.ico HTTP/1.1" 404 1016
+127.0.0.1 - - [27/Jul/2017:15:31:40 +0530] "GET /StudentManagement2/Studentlogin.html HTTP/1.1" 200 2735
+127.0.0.1 - - [27/Jul/2017:15:31:40 +0530] "GET /StudentManagement2/image/Students-studying-outdoors.jpg HTTP/1.1" 200 809867
+127.0.0.1 - - [27/Jul/2017:15:31:41 +0530] "GET /StudentManagement2/Adminlogin.html HTTP/1.1" 200 2759
+127.0.0.1 - - [27/Jul/2017:15:31:41 +0530] "GET /StudentManagement2/image/12510319-Business-people-working-together-in-office-Stock-Photo.jpg HTTP/1.1" 200 135809

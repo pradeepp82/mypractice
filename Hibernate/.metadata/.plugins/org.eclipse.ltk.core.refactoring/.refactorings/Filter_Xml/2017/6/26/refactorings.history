@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Com.Artek.Seve&apos; to &apos;Save&apos;&#x0A;- Original project: &apos;Filter_Xml&apos;&#x0A;- Original element: &apos;Com.Artek.Seve&apos;&#x0A;- Renamed element: &apos;Com.Artek.Save&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Seve&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Com.Artek{Seve.java[Seve" matchStrategy="1" name="Save" qualified="false" references="true" similarDeclarations="false" stamp="1498801948441" textual="false" version="1.0"/>
+</session>

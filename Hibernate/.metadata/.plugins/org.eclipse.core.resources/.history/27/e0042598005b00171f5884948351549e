@@ -1,0 +1,5 @@
+package Com.Artek;
+import javax.servlet.ServletConfig;
+public class Pagination extends  HttpServlet{
+
+}

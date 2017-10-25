@@ -1,0 +1,40 @@
+package Com.Artek;
+
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import org.hibernate.annotations.Entity;
+
+
+@Entity
+@Table(name="Student")
+
+public class Product {
+	
+@Id
+@GeneratedValue(strategy=GenerationType.AUTO)
+private Integer productid;
+
+private String proName;
+private double price;
+public Integer getProductid() {
+	return productid;
+}
+public void setProductid(Integer productid) {
+	this.productid = productid;
+}
+public String getProName() {
+	return proName;
+}
+public void setProName(String proName) {
+	this.proName = proName;
+}
+public double getPrice() {
+	return price;
+}
+public void setPrice(double price) {
+	this.price = price;
+}
+
+		
+}

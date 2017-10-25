@@ -1,0 +1,20 @@
+package Com.Artek;
+
+ 
+import java.io.Serializable;
+
+import org.hibernate.EmptyInterceptor;
+import org.hibernate.type.Type;
+
+public class ConsoleLogInterceptor extends EmptyInterceptor{
+	
+	private static  final  long serialVersionUId =1L;
+	
+	@Override
+	
+	public void onDelete(Object entity, Serializable id,Object [] state , String [] propertyNames,Type[] types )
+	{
+		System.out.println("on delete method is invoking");
+		System.out.println("detils of Entity are");
+	}
+}

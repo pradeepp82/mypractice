@@ -1,0 +1,23 @@
+package Com.Artek;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="customers")
+public class Customers {
+	
+	@Id
+	private Integer customerid;
+	
+	private String customername;
+	
+	@ManyToOne(cascade =CascadeType.ALL)
+	private Vendor parent;
+
+}
